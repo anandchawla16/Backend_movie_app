@@ -1,0 +1,23 @@
+server:
+  port: 8085
+  servlet:
+    contextPath: /api
+
+spring:
+
+  application:
+    name: movieapp-api
+
+  datasource:
+    url: jdbc:postgresql://mydbinstance1.ci9pie9a0ivo.us-east-1.rds.amazonaws.com:5432/moviedatabase
+    username: upgrad123
+    password: upgrad2021fsd
+
+
+
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
